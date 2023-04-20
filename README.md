@@ -33,7 +33,7 @@ The data that we used to run experiements is in the `Full_Project_Code` director
 
 ## Using Custom Data Run Your Own Experiments
 
-The data that we used to run experiements is in the `Custom_Project_Code` directory, and below are details regarding the files:
+To run the similarity metrics using your own data, navigate to the `Custom_Project_Code` directory:
 
 1. `dataframes`: This directory should contain the dataframes for your source and target domains. Make sure each dataframe has only two columns (`item_id` & `tags`). The `item_id` column should be an integer, and the `tags` columns should be a string with tags seperated by commas. Convert your dataframes into pickle files using `pandas.DataFrame.to_pickle()` and place the pickle files in this directory. The names of the dataframes **must** be `source_domain_df` and `target_domain_df`. 
 2. `domain_embeddings`: This directory will contain domain embeddings for your source and target domains, which are created by running `custom_domain_embeddings.py`. 
