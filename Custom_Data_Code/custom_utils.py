@@ -84,16 +84,15 @@ def gather_tags_movie(df):
 
 # Gets the tags and their frequencies for domains in the Amazon dataset
 def gather_tags_custom(df):
-    categories = df['tag'].values
-    flatten_list = list(chain.from_iterable(categories))
-    tags_punc = list(flatten_list)
+    categories = df['tags'].values
+    tags_punc = list(categories)
     pattern = "[0123456789" + re.escape(string.punctuation) + "]"
-    tags_clean = list(map(lambda x: re.sub(pattern, '', x.lower()), tags_punc))
+    tags_clean = list(map(lambda x: re.sub(pattern, '', str(x).lower()), tags_punc))
     tags_split = list(map(lambda x: x.split(), tags_clean))
     tags_words = list(chain.from_iterable(tags_split))
     tags_words = list(tags_words)
     stop_words = set(stopwords.words('english'))
-    text = ' '.join([word for word in tags_words if word.lower() not in stop_words])
+    text = ' '.join([word for word in tags_words if word not in stop_words])
     tags = list(text.split(' '))
     d = {}
     for i in tags:
@@ -101,7 +100,7 @@ def gather_tags_custom(df):
             d[i] += 1
         else:
             d[i] = 1
-            
+    
     tags = list(set(tags))
     return [tags, d]
 
@@ -198,7 +197,7 @@ def movielens_with_tag_emb(df, glove_embedding):
 def custom_data_with_tag_emb(df, glove_embedding):
     tups = []
     for index,row in df.iterrows():
-        cat = row['tag']
+        cat = row['tags']
         cat = cat.split(',')
         pattern = "[0123456789" + re.escape(string.punctuation) + "]"
         tags_clean = list(map(lambda x: re.sub(pattern, '', x.lower()), cat))
@@ -215,7 +214,7 @@ def custom_data_with_tag_emb(df, glove_embedding):
                 embeddings.append(glove_embedding[word])
         embeddings = np.array(embeddings)
         item_tags_embedding = np.mean(embeddings, axis=0)
-        tup = (row['movieId'], item_tags_embedding)
+        tup = (row['item_id'], item_tags_embedding)
         tups.append(tup)     
     return tups
 
