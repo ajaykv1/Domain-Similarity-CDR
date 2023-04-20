@@ -1,0 +1,8 @@
+---------- Results for Amazon Pairwise Similarities ----------
+
+Cross-Domain Similarities........
+
+Software & Music Instruments: 0.3317926541914465
+Software & Video Games: 0.4502040427476168
+Video Games & Music Instruments: 0.34883468109858223
+

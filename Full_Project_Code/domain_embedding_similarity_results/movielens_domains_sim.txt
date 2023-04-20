@@ -1,0 +1,8 @@
+***** MOVIELENS DATA *****
+
+Tags Represented as Glove Embeddings (Weighted Average).....
+
+----- Cosine Similarity -----
+Action and Adventure: 0.9609800278297731
+Action and Comedy: 0.9313484907646338
+Adventure and Comedy: 0.9305159702739327

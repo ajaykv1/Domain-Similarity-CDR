@@ -1,0 +1,8 @@
+***** BOOKS DATA *****
+
+Tags Represented as Glove Embeddings (Weighted Average).....
+
+----- Cosine Similarity -----
+nonfiction and romance: 0.8106314323097676
+nonfiction and historical: 0.9339204595731404
+romance and historical: 0.8661605245533772

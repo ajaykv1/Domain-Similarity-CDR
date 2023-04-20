@@ -1,0 +1,8 @@
+---------- Results for Movielens Pairwise Similarities ----------
+
+Cross-Domain Similarities........
+
+Action & Adventure: 0.3543750944191326
+Action & Comedy: 0.32491158281972093
+Comedy & Adventure: 0.3285988771736447
+

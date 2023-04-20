@@ -1,0 +1,8 @@
+---------- Results for Books Pairwise Similarities ----------
+
+Cross-Domain Similarities........
+
+Romance & Historical: 0.7395686318099499
+Romance & Nonfiction: 0.6644924819648266
+Nonfiction & Historical: 0.7831869101196528
+

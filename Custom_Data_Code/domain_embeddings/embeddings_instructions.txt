@@ -1,0 +1,3 @@
+1. Please run the custom_domain_embeddings.py file
+2. Once that file is completed running, the domain embeddings for the source and target domain will be stored in this directory as pickle files.
+3. Make sure to put your source and target data frames in the data frames folder before running the file. 

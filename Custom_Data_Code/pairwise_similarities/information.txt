@@ -1,0 +1,2 @@
+1. Please run the custom_pairwise_similarities.py file
+2. Once that file is completed running, the results will be written to a text file in this directory

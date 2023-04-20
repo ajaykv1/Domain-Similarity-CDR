@@ -1,0 +1,9 @@
+***** AMAZON DATA *****
+
+Tags Represented as Glove Embeddings (Weighted Average).....
+
+----- Cosine Similarity -----
+Software and Music Instruments: 0.49735509576669523
+Software and Video Games: 0.7643040360656637
+Music Instruments and Video Games: 0.5425444853875926
+
