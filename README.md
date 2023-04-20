@@ -51,8 +51,8 @@ The data that we used to run experiements is in the `Custom_Project_Code` direct
 2. Create two dataframes called `source_domain_df` and `target_domain_df` that have two columns (`item_id` & `tags`).
 3. Convert your dataframes into pickle files, and add them to the `dataframes` directory.
 4. Create domain embeddings for both your source and target domains:
-   -`python3 custom_domain_embeddings.py`
-5. To retrieve the similarity values between domains using the ***Embedding-based Domain Similarity*** method, run the command below:
+   - `python3 custom_domain_embeddings.py`
+6. To retrieve the similarity values between domains using the ***Embedding-based Domain Similarity*** method, run the command below:
    - `python3 custom_domain_embedding_similarities.py`
 
 ### Running ***Inter-domain Item Similarity*** Using Custom Source and Target Domains
